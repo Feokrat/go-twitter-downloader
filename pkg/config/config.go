@@ -2,7 +2,6 @@ package config
 
 import (
 	"strings"
-	"time"
 
 	"github.com/spf13/viper"
 )
@@ -13,11 +12,8 @@ type (
 	}
 
 	HTTPConfig struct {
-		Host               string        `mapstructure:"host"`
-		Port               string        `mapstructure:"port"`
-		ReadTimeout        time.Duration `mapstructure:"readTimeout"`
-		WriteTimeout       time.Duration `mapstructure:"writeTimeout"`
-		MaxHeaderMegabytes int           `mapstructure:"maxHeaderBytes"`
+		Host string `mapstructure:"host"`
+		Port string `mapstructure:"port"`
 	}
 )
 
